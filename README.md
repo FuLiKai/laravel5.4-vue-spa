@@ -1,5 +1,5 @@
 # laravel5.4-vue-spa
-集成了laravel5.4+vue+vue-router+elemenui+animate.css的单页应用模板，开箱即用
+这是我为开发公司期权管理平台搭建的一个开发环境，集成了laravel5.4+vue+vue-router+elemenui+animate.css。
 
 服务端：
 需要安装apache服务器(推荐安装appserv)。
