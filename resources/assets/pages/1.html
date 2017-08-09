@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>动画</title>
+  <script type="text/javascript" src="vue.js"></script>
+  <link rel="stylesheet" type="text/css" href="animate.css" rel="external nofollow" >
+  <style type="text/css">
+    p {
+      width: 300px;
+      height: 300px;
+      background: red;
+      margin: 10px auto;
+    }
+  </style>
+  <script type="text/javascript">
+    window.onload = function(){
+      var app = new Vue({
+        el:'#box',
+        data:{
+          show:false
+        }
+      })
+    }
+  </script>
+</head>
+<body>
+  <div id="box">
+    <!-- 控制数据的值切换显示隐藏 -->
+    <button @click="show=!show">transition</button>
+     
+     <transition enter-active-class="zoomInLeft" leave-active-class="zoomOutRight">
+      <p v-show="show" class="animated"></p>
+    </transition> 
+ 
+    <!-- 第二种方法 -->
+     <!-- <transition enter-active-class="animated zoomInLeft" leave-active-class="animated zoomOutRight">
+      <p v-show="show"></p>
+    </transition>  -->
+ 
+    <!-- 多元素运动 -->
+    <!-- <transition-group enter-active-class="zoomInLeft" leave-active-class="zoomOutRight">
+      <p v-show="show" class="animated" :key="1"></p>
+      <p v-show="show" class="animated" :key="2"></p>
+    </transition-group> -->
+  </div>
+</body>
+</html>
