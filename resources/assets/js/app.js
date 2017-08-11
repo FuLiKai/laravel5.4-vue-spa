@@ -18,6 +18,7 @@ window.Vue = require('vue');
 Vue.component('app', require('./App.vue'));
 Vue.component('op-header', require('./components/common/Header.vue'));
 Vue.component('op-navigation', require('./components/common/Navigation.vue'));
+Vue.component('op-footer', require('./components/common/Footer.vue'));
 
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-default/index.css';

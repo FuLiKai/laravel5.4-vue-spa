@@ -1,8 +1,6 @@
 <template>
     <div class="container">
-        <div class="header">
-            <op-header></op-header>
-        </div>
+        <op-header></op-header>
         <div class="client">
             <div class="nav">
                 <op-navigation></op-navigation>
@@ -13,12 +11,17 @@
                 </transition>   
             </div>
         </div>
+        <op-footer></op-footer>
     </div>
 </template>
 
 <style lang="scss" scoped>
     .client, .content {
         display: flex;
+        width: 100%;
+    }
+    .client {
+        min-height: 924px;
     }
 </style>
 
