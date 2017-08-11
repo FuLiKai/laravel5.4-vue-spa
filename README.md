@@ -9,4 +9,6 @@
 前端： 
 安装node.js和npm。
 安装完成以后，进入项目目录，命令行运行npm install安装依赖包。
-最后运行npm run dev，访问localhost/laravel5.4-vue-spa/public
+最后运行npm run dev，访问localhost/laravel5.4-vue-spa/public.
+
+前端代码目录：resources\assets\js
